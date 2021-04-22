@@ -4415,6 +4415,21 @@ break
 						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
 					}
                                       break
+				case 'clonar':
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Marque a pessoa que você quer clonar\n\n*EXEMPLO:* clone @')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
+					try {
+						pp = await client.getProfilePicture(id)
+						buffer = await getBuffer(pp)
+						client.updateProfilePicture(botNumber, buffer)
+						mentions(`Foto do perfil atualizada com sucesso, usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
+					} catch (e) {
+						reply('Putz, deu erro, a pessoa deve estar sem foto 😔')
+					}
+					break
 		        case 'setfoto2':
                     if (!isGroup) return reply(mess.only.group)
                     if (!isadminbot) return reply('Quem é Você?')
