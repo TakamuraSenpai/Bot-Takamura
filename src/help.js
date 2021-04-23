@@ -10,27 +10,24 @@ const help = (prefix, pushname2, time) => {
      (▀̿Ĺ̯▀̿ ̿)  Dᴏɴᴏ:Takamura (▀̿Ĺ̯▀̿ ̿)
 
 ║╰┅┅┅┅┅┅┅┅┅┆Sempre Sera Atualizado !┆┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
-║〘 INFORMAÇÕES SOBRE O †ลкลмµяล 赤ちゃんの圧力 𝜝𝛩͢𝑇  〙
-║
-╠🐉  ツ Pressao Nenem ツ
-║
+║〘 INFORMAÇÕES SOBRE O †ลкลмµяล  𝜝𝛩͢𝑇  〙    
+╠🐉
 ╠🐉 𝐃𝐎𝐍𝐎: 🐉Takamura (Bᴀsᴇ ᴅᴏ Cᴀᴜss ǫᴜᴇ ᴇ ᴅᴏ Dᴀʀᴋ) 
-║
-╠🐉 Quer falar com o Causs? acesse: https://wa.me/5547992091566
-║
 ╠🐉 »»————-*wa.me/558695023910*————-«« Numero Do Dono
-║
 ╠🐉 𝐒𝐓𝐀𝐓𝐔𝐒: [ ✓ 🅑🅞🅣 🅞🅝 ✓]
-║
 ╠🅓🅐🅣🅐 🅔 🅗🅞🅡🅐: ${time}
 ║
-╠══To Trabalhar Igual Codenado A: ${kyun(uptime)}
+╠══Bot Esta Online A: ${kyun(uptime)}
 ╭┅┅┅┅┅┅┅┅┅〘 🄲🄾🄼🄰🄽🄳🄾🅂 🄽🄾🅅🄾🅂 〙┅┅┅┅┅┅┅┅
 ║
 ║🐉 ➪ *supergay
 ║🐉 ➪ *gostosa
 ║🐉 ➪ *casal
-║
+║🐉 ➪ *lofiwallpaper2
+║🐉 ➪ *lofiwallpaper3
+║🐉 ➪ *xvidros
+║🐉 ➪ *fbi
+║🐉 ➪ Removidos: loli,loli1,nsfw1,clonar
 ╭┅┅┅┅┅┅┅┅┅〘 🄼🄴🄽🅄 〙┅┅┅┅┅┅┅┅
 ║
 ║🐉 ➪ **sticker*
@@ -38,7 +35,7 @@ const help = (prefix, pushname2, time) => {
 ║🐉 ➪ **darkjokes (memes aleatórios)*
 ║🐉 ➪ **memeindo*
 ║🐉 ➪ **tts*
-║🐉 ➪ **lolih [on]*
+║🐉 ➪ **lolih [off]*
 ║🐉 ➪ **nsfwloli [off]*
 ║🐉 ➪ **url2img*
 ║🐉 ➪ **leens [na legenda]*
@@ -64,7 +61,7 @@ const help = (prefix, pushname2, time) => {
 ║🐉 ➪ **limpar*
 ║🐉 ➪ **bc [ *texto* ]*
 ║🐉 ➪ **bemvindo [1/0]*
-║🐉 ➪ **clonar [@]*
+║🐉 ➪ **clonar [Desativado]*
 ║🐉 ➪ **help1*
 ║🐉 ➪ **dono*
 ║🐉 ➪ **owner*
@@ -102,7 +99,7 @@ const help = (prefix, pushname2, time) => {
 ║🐉 ➪ **lofi*
 ║🐉 ➪ **malkova*
 ║🐉 ➪ **canal*
-║🐉 ➪ **nsfwloli1*
+║🐉 ➪ **nsfwloli1[Desativado]*
 ║🐉 ➪ **reislin*
 ║
 ╭┅┅┅┅┅┅┅┅┅〘 🄸🄽🅃🄴🄻🄸🄶🄴🄽🄲🄸🄰 🄳🄾 🄱🄾🅃 〙┅┅┅┅┅┅┅┅
