@@ -1,6 +1,9 @@
-const filmes = (prefix, pushname2) => {
+const filmes = (prefix, pushname) => {
 
 	return `
-    Ola ${pushname2} Isso e um Teste Do Comando`
+    Ola ${pushname} Filmes Para Donwload Bom Proveito (EM BREVE) `
+        
+    
+
 } 
 exports.filmes = filmes
