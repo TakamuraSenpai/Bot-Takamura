@@ -690,14 +690,18 @@ if (text.includes("placa"))
 			reply("hehehe")
 	}
 						
-		if (messagesC.includes("merda")){
+		if (messagesC.includes("botlento")){
 			client.updatePresence(from, Presence.composing)
-			reply("e quem disse que isso e problema meu?")
+			reply("Entao Vai La Cria um ")
 	}
-	
-		if (messagesC.includes("eae")){
-			client.updatePresence(from, Presence.composing)
-			reply("opa")
+						
+	if (messagesC.includes("merda")){
+		client.updatePresence(from, Presence.composing)
+		reply("e quem disse que isso e problema meu?")
+    }
+	if (messagesC.includes("bot off")){
+		client.updatePresence(from, Presence.composing)
+		reply("Estou Talvez Em Manutenção ou Meu Dono Esta Adicionar Comandos :D")
 	}
 
 		if (messagesC.includes("Rai")){
@@ -705,7 +709,7 @@ if (text.includes("placa"))
 			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
 	}
 	
-		if (messagesC.includes("*meliodas")){
+		if (messagesC.includes("*Takamura")){
 			client.updatePresence(from, Presence.composing)
 			reply("Saca só")
 	}
@@ -788,13 +792,6 @@ if (text.includes("placa"))
 	     	const d = fs.readFileSync('./sticker/eita.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
-          
-	        if (messagesC.includes("sexo")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/Sexo.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
 				if (messagesC.includes("canta")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/canto.mp3');
@@ -830,6 +827,14 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/tmnc.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
+	
+	        if (messagesC.includes("yamete")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/yamete.mp3');
+			client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+
+	}	
+
 
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
@@ -859,7 +864,7 @@ if (text.includes("placa"))
 			switch(command) {
 	            case 'menu':
 	            	uptime = process.uptime ()
-                    putagg = await getBuffer(`https://image.prntscr.com/image/B2aXhh2RRw6eD2iGjgMt5w.png`)
+                    putagg = await getBuffer(`https://i.pinimg.com/originals/72/75/6c/72756c0c443326234cfee69a9e0b327f.gif`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
 						case 'filmes':
@@ -3992,19 +3997,19 @@ break
 					buffer = await getBuffer(`https://1.bp.blogspot.com/-3K_b14RzHTA/XwTW7SQTPRI/AAAAAAAAPtY/UOaKURECbzwXfvASa3g6Pz0D_Ha73Dw4wCLcBGAsYHQ/s1600/boabronha_10.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'olha p isso mano, pqp '})
 					break
-				case 'akeno':
+				case 'xvidros':
 					meme = await kagApi.memes()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFAocqaur5ZX1DPN6ZGP8PJy2cNppas_gYA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
+					buffer = await getBuffer(`https://images7.memedroid.com/images/UPLOADED189/565ae8d281305.jpeg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Desconheço Esse Site Moço , So Conheço Xvidros'})
 					break
-				case 'loli1':
+				case 'fbi':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
+					buffer = await getBuffer(`https://thumbs.gfycat.com/PreciousSilentGnat-size_restricted.gif`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Hmm, então quer ver loli?, Pera ai Entao'})
 					break
 				case 'hentai':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/8U9GwX4.jpg`)
+					buffer = await getBuffer(`https://i.pinimg.com/736x/7a/60/70/7a60708512a2440010ca538dad83b7fc.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ih Rapaz Oia Punheteiro Galera 😂'})
 					break
 				case 'bomdia':
@@ -4035,11 +4040,21 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7ot6RZPnXSJFFKVjPoeXHjTYyi6uk5W_mA&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️'})
 					break
-				case 'lofi':
+				case 'lofiwallpaper':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9hZBPRo16fIhsIus3t1je2oAU23pQqBpfw&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
 					break
+				case 'lofiwallpaper2':
+						memein = await kagApi.memeindo()
+						buffer = await getBuffer(`https://mir-s3-cdn-cf.behance.net/project_modules/fs/9bc27292880429.5e569ff84e4d0.gif`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
+						break
+				case 'lofiwallpaper3':
+							memein = await kagApi.memeindo()
+							buffer = await getBuffer(`https://i.pinimg.com/originals/76/67/b9/7667b997a20a7a6aa1b1ae87d532dbfd.jpg`)
+							client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
+							break			
 				case 'malkova':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbo5EcVSGj-IvEVznHIgMZ9vjFptZfvprtg&usqp=CAU`)
@@ -4107,14 +4122,14 @@ break
 					prefix = args[0]
 					reply(`O prefixo foi alterado com sucesso para : ${prefix}`)
 					break
-				case 'loli':
+				case 'loli(removido)':
 					loli.getSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERROR* ❌')
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'lolizinha'})
 					})
 					break
-                case 'lolih':
+                case 'lolih(removido)':
                     gatauda = body.slice(6)
                     reply(mess.wait)
                     anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
@@ -4415,7 +4430,7 @@ break
 						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
 					}
                                       break
-				case 'clonar':
+				case 'clonar(9removido9)':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Marque a pessoa que você quer clonar\n\n*EXEMPLO:* clone @')
