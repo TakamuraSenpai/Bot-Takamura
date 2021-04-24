@@ -672,7 +672,7 @@ if (text.includes("placa"))
 			
 		if (messagesC.includes("Blz")){
 			client.updatePresence(from, Presence.composing)
-			reply("Aham")
+			reply("Ok entao")
 	}
 	
 		if (messagesC.includes("Lixo")){
@@ -695,18 +695,18 @@ if (text.includes("placa"))
 			reply("Entao Vai La Cria um ")
 	}
 						
-	if (messagesC.includes("merda")){
+	    if (messagesC.includes("merda")){
 		client.updatePresence(from, Presence.composing)
 		reply("e quem disse que isso e problema meu?")
     }
-	if (messagesC.includes("bot off")){
+	    if (messagesC.includes("botoff")){
 		client.updatePresence(from, Presence.composing)
 		reply("Estou Talvez Em Manutenção ou Meu Dono Esta Adicionar Comandos :D")
 	}
 
 		if (messagesC.includes("Rai")){
-			client.updatePresence(from, Presence.composing)
-			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
+		client.updatePresence(from, Presence.composing)
+		reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
 	}
 	
 		if (messagesC.includes("*Takamura")){
@@ -774,7 +774,7 @@ if (text.includes("placa"))
     }
           if (messagesC.includes("kkkkkk")){
 			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/kkk.webp');
+	     	const d = fs.readFileSync('./sticker/kkkk.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
           if (messagesC.includes("vida")){
@@ -2363,8 +2363,8 @@ case 'glub':
 tujuh = fs.readFileSync('./assets/glub.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-case 'funkyamete':
-tujuh = fs.readFileSync('./assets/glub.mp3');
+case 'funkegirl':
+tujuh = fs.readFileSync('./assets/funkyamete.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
 		
@@ -2938,7 +2938,7 @@ break
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
-						client.sendMessage(from, 'BOT DESLIGADO COM SUCESSO', text, { quoted: mek })
+						client.sendMessage(from, 'BOT DESLIGADO COM SUCESSO para manutençao ou add comandos', text, { quoted: mek })
 						ran = getRandom('.webp')
 						await ffmpeg(`./${media}`)
 							.input(media)
@@ -3968,6 +3968,13 @@ break
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
 					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/prima-novinha-pelada-6.jpg`)
 					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-5.jpg`)
+					buffer = await getBuffer(`https://nudebabes.realnakedgirls.net/wp-content/uploads/2018/05/tumblr_nye9slNrdx1rwaupfo1_1280.gif`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kudXW2Na37shGDCbuy5WHuOE5FxEUWm75_K7nFu9l8onGbIaqKLu4MxgQiwFKkK00xo&amp;usqp=CAU`)
+					buffer = await getBuffer(`https://blogdascaxorras.net/wp-content/uploads/2011/07/ANAL-DOLORIDO.jpg`)
+					buffer = await getBuffer(`https://ei.phncdn.com/videos/201811/07/190986141/original/(m=eaAaGwObaaaa)(mh=NEDr9KV4l-9HNGdW)11.jpg`)
+					buffer = await getBuffer(`http://img-hw.xvideos-cdn.com/videos/thumbslll/49/df/1b/49df1b714197d8c74dbc9e284beedf0e/49df1b714197d8c74dbc9e284beedf0e.29.jpg`)
+					buffer = await getBuffer(`https://blog.safada.tv/wp-content/uploads/2020/05/2018_DreadHotdeEmpregadaSafada_SafadaTV-20-1024x576.jpg`)
+					buffer = await getBuffer(`https://thumb-p0.xhcdn.com/a/3kgJwl-OTbnJGrSjQ3OauQ/000/208/342/270_450.gif`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
@@ -4001,12 +4008,12 @@ break
 					buffer = await getBuffer(`https://1.bp.blogspot.com/-3K_b14RzHTA/XwTW7SQTPRI/AAAAAAAAPtY/UOaKURECbzwXfvASa3g6Pz0D_Ha73Dw4wCLcBGAsYHQ/s1600/boabronha_10.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'olha p isso mano, pqp '})
 					break
-				case 'xvidros':
+				case 'punheta':
 					meme = await kagApi.memes()
 					buffer = await getBuffer(`https://images7.memedroid.com/images/UPLOADED189/565ae8d281305.jpeg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Desconheço Esse Site Moço , So Conheço Xvidros'})
 					break
-				case 'fbi':
+				case 'fbiloli':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://thumbs.gfycat.com/PreciousSilentGnat-size_restricted.gif`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Hmm, então quer ver loli?, Pera ai Entao'})
@@ -4041,8 +4048,8 @@ break
 				break
 				case 'belle1':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7ot6RZPnXSJFFKVjPoeXHjTYyi6uk5W_mA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️'})
+					buffer = await getBuffer(`https://myteenwebcam.com/fapp/gifs/e2c5dc7c1b9cda2ef11d1a34f405e07c.gif`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️ - Isso me Custo 500$ reais'})
 					break
 				case 'lofiwallpaper':
 					memein = await kagApi.memeindo()
@@ -4050,15 +4057,15 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
 					break
 				case 'lofiwallpaper2':
-						memein = await kagApi.memeindo()
-						buffer = await getBuffer(`https://mir-s3-cdn-cf.behance.net/project_modules/fs/9bc27292880429.5e569ff84e4d0.gif`)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
-						break
+					meme = await kagApi.memes()
+					buffer = await getBuffer(`https://mir-s3-cdn-cf.behance.net/project_modules/fs/9bc27292880429.5e569ff84e4d0.gif`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '💆 - Aproveite'})
+					break	
 				case 'lofiwallpaper3':
-							memein = await kagApi.memeindo()
-							buffer = await getBuffer(`https://i.pinimg.com/originals/76/67/b9/7667b997a20a7a6aa1b1ae87d532dbfd.jpg`)
-							client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
-							break			
+					meme = await kagApi.memes()
+					buffer = await getBuffer(`https://i.pinimg.com/originals/76/67/b9/7667b997a20a7a6aa1b1ae87d532dbfd.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '💆 - Aproveite'})
+					break			
 				case 'malkova':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbo5EcVSGj-IvEVznHIgMZ9vjFptZfvprtg&usqp=CAU`)
@@ -4116,9 +4123,14 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
 				case 'dono':
+					meme = await kagApi.memes()
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADDq_64EbTI0NroP7CUoVeWmu1J06NnGHw&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Criador Do BOT:Eae meu parsa, sou †ลкลмµяล  Samurai Aposentado e sou criador do Bot Takamura \n*WPP:* wa.me/+558695023910\n\n\nEspero que tenham gostado do bot 💪\n*Os Invejosos Vao Se Fuder*️'})
+					break	
+				case 'dono(off)':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://image.prntscr.com/image/-kU7bEG2TTSG5HoSKc9oVg.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Criador Do BOT:Eae meu parsa, sou †ลкลмµяล 赤ちゃんの圧力 Samurai Aposentado e sou criador do Bot Takamura \n*WPP:* wa.me/+558695023910\n\n\nEspero que tenham gostado do bot 💪\n*Os Invejosos Vao Se Fuder*️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Criador Do BOT:Eae meu parsa, sou †ลкลмµяล  Samurai Aposentado e sou criador do Bot Takamura \n*WPP:* wa.me/+558695023910\n\n\nEspero que tenham gostado do bot 💪\n*Os Invejosos Vao Se Fuder*️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
@@ -4268,7 +4280,7 @@ break
 					}
 					reply('Excluido todos os chats com sucesso :)')
 					break
-				case 'bc':
+				case 'aviso':
 					if (!isOwner) return reply('Quem é Você, você não é meu dono 😂?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
@@ -4276,12 +4288,12 @@ break
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `[ TRANSMIÇÃO DE AVISO ]\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `[ 🐉 TRANSMIÇÃO DE AVISO 🐉 ]\n\n${body.slice(4)}`})
 						}
-						reply('Transmissão enviada com sucesso')
+						reply('Aviso Foi enviado com sucesso')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ RAPAZIADA OLHA ESSE AVISO ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[🐉 🇷 🇦 🇵 🇦 🇿 🇮 🇦 🇩 🇦  🇴 🇱 🇭 🇦  🇪 🇸 🇸 🇪  🇦 🇻 🇮 🇸 🇴  🐉]\n\n${body.slice(4)}`)
 						}
 						reply('Transmissão enviada com sucesso')
 					}
