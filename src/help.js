@@ -26,8 +26,9 @@ const help = (prefix, pushname2, time) => {
 ║🐉 ➪ *lofiwallpaper2
 ║🐉 ➪ *lofiwallpaper3
 ║🐉 ➪ *xvidros
-║🐉 ➪ *fbi
-║🐉 ➪ Removidos: loli,loli1,nsfw1,clonar
+║🐉 ➪ *fbiloli
+║🐉 ➪ *punheta[Braço igual do Leo Stronda]
+║🐉 ➪ Removidos: loli-loli1-nsfw1-clonar ✓
 ╭┅┅┅┅┅┅┅┅┅〘 🄼🄴🄽🅄 〙┅┅┅┅┅┅┅┅
 ║
 ║🐉 ➪ **sticker*
