@@ -917,18 +917,6 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
-					case 'pauzudo':
-                     if (!isGroup) return reply(mess.only.group)
-                      membr = []
-                      const pauzudo12 = groupMembers
-                      const pauzudo11 = groupMembers
-                      const pauzudo12 = pauzudo12[Math.floor(Math.random() * pauzudo12.length)]
-                      const pauzudo11 = pauzudo11[Math.floor(Math.random() * pauzudo11.length)]
-                      reply(`*ＤＥＴＥＣＴＯＲ   ＤＥ 𝒫 𝒜 𝒰 𝒵 𝒰 𝒟 𝒪×͜×*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${pauzudo11.jid.split('@')[0]} @${pauzudo12.jid.split('@')[0]} *PARADA(O)S AÍ🖐*\n\n*VOCÊ ACABA DE RECEBER DUAS MULTAS*\n\n*1 por não dar bom dia,boa tarde,boa noite e outra por ser muito*\n\n*Ter Pau Grande(o)*\n\n*valor da multa:*\n*FOTO DA PAU NO PV kkkkk*`)
-                      membr.push(pauzudo11.jid)
-                      membr.push(pauzudo12.jid)
-                      mentions(teks, membr, true)
-                       break
                     case 'supergay':
                        if (!isGroup) return reply(mess.only.group)
                          membr = []
