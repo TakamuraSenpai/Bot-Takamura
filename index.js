@@ -870,9 +870,9 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.pinimg.com/originals/72/75/6c/72756c0c443326234cfee69a9e0b327f.gif`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
-						case 'nintendo1':
+						case 'filmes':
 						putagg = await getBuffer(`https://iconape.com/wp-content/png_logo_vector/hd-filmes-logo.png`)
-						client.sendMessage(from, putagg, image, {quoted: mek, caption: nintendo1(prefix, pushname2)})
+						client.sendMessage(from, putagg, image, {quoted: mek, caption: filmes(prefix, pushname2)})
 						break
                 case 'alist':
                     putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
