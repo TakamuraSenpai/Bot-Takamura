@@ -984,20 +984,6 @@ if (text.includes("placa"))
 					bufferz = await getBuffer(anu.gambar)
 					client.sendMessage(from, bufferz, image, {quoted: mek})
 					break
-				case 'travecao':
-						if (!isGroup) return reply(mess.only.group)
-						  membr = []
-						  const gays11 = groupMembers
-						  const gays21 = groupMembers
-						  const gay12 = gays11[Math.floor(Math.random() * gays11.length)]
-						  const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
-						  var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
-						  const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
-						  reply (`𝐸𝓈𝓆𝓊𝒾𝓃𝒶 𝒮.𝒜: ${pushname2} 𝒮𝓊𝒶 𝒫𝑜𝓇𝒸𝑒𝓉𝒶𝑔𝑒𝓂 𝒮𝑒𝓇 𝒯𝓇𝒶𝓋𝑒𝒸𝒶𝑜 𝑒  @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
-						  membr.push(gays11.jid)
-						  membr.push(gays21.jid)
-						  mentions(teks, membr, true)
-					 break	
                 case 'ytkomen':
 					if (args.length < 1) return reply('Cadê o texto tio?')
 					gh = body.slice(9)
