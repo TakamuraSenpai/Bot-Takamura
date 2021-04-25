@@ -750,7 +750,7 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
-			if (messagesC.includes("bot")){
+			if (messagesC.includes("oibot")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/oibot.m4a');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -833,7 +833,8 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/yamete.mp3');
 			client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 
-	}	
+	}
+		
 
 
 				if (messagesC.includes("mandememe")){
@@ -850,7 +851,9 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("Teu Pai Aquele Corno")
 	}
-	    
+	
+
+	
 	
 			colors = ['red','white','black','blue','yellow','green']
 			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
@@ -867,9 +870,9 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.pinimg.com/originals/72/75/6c/72756c0c443326234cfee69a9e0b327f.gif`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix, pushname2, time)})
                     break
-						case 'filmes':
+						case 'nintendo':
 						putagg = await getBuffer(`https://iconape.com/wp-content/png_logo_vector/hd-filmes-logo.png`)
-						client.sendMessage(from, putagg, image, {quoted: mek, caption: filmes(prefix, pushname2)})
+						client.sendMessage(from, putagg, image, {quoted: mek, caption: nintendo(prefix, pushname2)})
 						break
                 case 'alist':
                     putagg = await getBuffer(`https://i.ibb.co/mt4FvHN/Animes.png`)
@@ -914,6 +917,18 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
+					case 'pauzudo':
+                     if (!isGroup) return reply(mess.only.group)
+                      membr = []
+                      const pauzudo12 = groupMembers
+                      const pauzudo11 = groupMembers
+                      const pauzudo12 = pauzudo12[Math.floor(Math.random() * pauzudo12.length)]
+                      const pauzudo11 = pauzudo11[Math.floor(Math.random() * pauzudo11.length)]
+                      reply(`*ＤＥＴＥＣＴＯＲ   ＤＥ 𝒫 𝒜 𝒰 𝒵 𝒰 𝒟 𝒪×͜×*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${pauzudo11.jid.split('@')[0]} @${pauzudo12.jid.split('@')[0]} *PARADA(O)S AÍ🖐*\n\n*VOCÊ ACABA DE RECEBER DUAS MULTAS*\n\n*1 por não dar bom dia,boa tarde,boa noite e outra por ser muito*\n\n*Ter Pau Grande(o)*\n\n*valor da multa:*\n*FOTO DA PAU NO PV kkkkk*`)
+                      membr.push(pauzudo11.jid)
+                      membr.push(pauzudo12.jid)
+                      mentions(teks, membr, true)
+                       break
                     case 'supergay':
                        if (!isGroup) return reply(mess.only.group)
                          membr = []
@@ -981,6 +996,20 @@ if (text.includes("placa"))
 					bufferz = await getBuffer(anu.gambar)
 					client.sendMessage(from, bufferz, image, {quoted: mek})
 					break
+				case 'travecao':
+						if (!isGroup) return reply(mess.only.group)
+						  membr = []
+						  const gays11 = groupMembers
+						  const gays21 = groupMembers
+						  const gay12 = gays11[Math.floor(Math.random() * gays11.length)]
+						  const gay13 = gays21[Math.floor(Math.random() * gays21.length)]
+						  var zhit1 = ["1%", `10%`, `20%`, `40%`, `50%`, `60%`, `80%`, `90%`, `100%`, `99999%`]
+						  const zhit2 = zhit1[Math.floor(Math.random() * zhit1.length)]
+						  reply (`𝐸𝓈𝓆𝓊𝒾𝓃𝒶 𝒮.𝒜: ${pushname2} 𝒮𝓊𝒶 𝒫𝑜𝓇𝒸𝑒𝓉𝒶𝑔𝑒𝓂 𝒮𝑒𝓇 𝒯𝓇𝒶𝓋𝑒𝒸𝒶𝑜 𝑒  @${gay12.jid.split('@')[0]} @${gay13.jid.split('@')[0]}\n 𝒄𝒐𝒎 𝒑𝒐𝒓𝒄𝒆𝒏𝒕𝒂𝒈𝒆𝒎 𝒅𝒆 ${zhit2}`)
+						  membr.push(gays11.jid)
+						  membr.push(gays21.jid)
+						  mentions(teks, membr, true)
+					 break	
                 case 'ytkomen':
 					if (args.length < 1) return reply('Cadê o texto tio?')
 					gh = body.slice(9)
@@ -3957,42 +3986,35 @@ break
 				    client.sendMessage(from, `*${anu.result.data}*`, text, {quoted: mek})
 				    await limitAdd(sender) 	
 				    break 
-				case 'porno':
-				    if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdU0UmT8RigE3Hbr80gmigjb2AdnPJklcQ3A&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/11/novinha-petuda-fotos-4.jpg`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/prima-novinha-pelada-6.jpg`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-5.jpg`)
-					buffer = await getBuffer(`https://nudebabes.realnakedgirls.net/wp-content/uploads/2018/05/tumblr_nye9slNrdx1rwaupfo1_1280.gif`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kudXW2Na37shGDCbuy5WHuOE5FxEUWm75_K7nFu9l8onGbIaqKLu4MxgQiwFKkK00xo&amp;usqp=CAU`)
-					buffer = await getBuffer(`https://blogdascaxorras.net/wp-content/uploads/2011/07/ANAL-DOLORIDO.jpg`)
-					buffer = await getBuffer(`https://ei.phncdn.com/videos/201811/07/190986141/original/(m=eaAaGwObaaaa)(mh=NEDr9KV4l-9HNGdW)11.jpg`)
-					buffer = await getBuffer(`http://img-hw.xvideos-cdn.com/videos/thumbslll/49/df/1b/49df1b714197d8c74dbc9e284beedf0e/49df1b714197d8c74dbc9e284beedf0e.29.jpg`)
-					buffer = await getBuffer(`https://blog.safada.tv/wp-content/uploads/2020/05/2018_DreadHotdeEmpregadaSafada_SafadaTV-20-1024x576.jpg`)
-					buffer = await getBuffer(`https://thumb-p0.xhcdn.com/a/3kgJwl-OTbnJGrSjQ3OauQ/000/208/342/270_450.gif`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-6.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-7.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-8.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-10.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-16.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
-					break
+					case 'porno':
+						if (!isGroup) return reply(mess.only.group)
+						if (!isGroupAdmins) return reply(mess.only.admin)
+						memein = await kagApi.memeindo()
+						buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdU0UmT8RigE3Hbr80gmigjb2AdnPJklcQ3A&usqp=CAU`)
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/11/novinha-petuda-fotos-4.jpg`)
+						buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
+						buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
+						buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/prima-novinha-pelada-6.jpg`)
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-5.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-6.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-7.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-8.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-10.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-16.jpg`)
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
+						break
 				case 'belle2':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
