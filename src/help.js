@@ -23,8 +23,9 @@ const help = (prefix, pushname2, time) => {
 ║🐉 ➪ *supergay
 ║🐉 ➪ *gostosa
 ║🐉 ➪ *casal
-║🐉 ➪ *lofiwallpaper2
-║🐉 ➪ *lofiwallpaper3
+║🐉 ➪ *travecao
+║🐉 ➪ *pauzudo
+║🐉 ➪ *Mais Musica Adicionada
 ║🐉 ➪ *xvidros
 ║🐉 ➪ *fbiloli
 ║🐉 ➪ *punheta[Braço igual do Leo Stronda]
